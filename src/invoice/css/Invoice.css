@@ -1,0 +1,536 @@
+.invoice-container {
+  /* text-align: center; */
+  padding: 0px;
+  font-family: Arial, sans-serif;
+}
+
+.invoice {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  margin-top: 10px;
+  /* width: 100%; */
+
+  background: #fffdfd;
+  /* border-radius: 10px; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  color: #000000;
+}
+
+.invoice-header {
+  /* background: #ff0505; */
+  display: flex;
+  margin-bottom: 50px;
+  /* padding-bottom: 50px; */
+}
+
+/* left-side */
+.company-details {
+  /* background: #625757; */
+  width: 60%;
+}
+
+/* sub left side */
+.company-details {
+  /* background: #000; */
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+
+.business-info {
+  /* background: #48514a; */
+  flex-grow: 2;
+  padding-bottom: 10px;
+}
+
+.client-details {
+  /* background: #38519b; */
+  /* font-size: 16px; */
+}
+
+/* right-side */
+.invoice-meta {
+  /* background: #dddcdc; */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.invoice-summary {
+  display: flex;
+  align-items: end;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #dedada;
+}
+.invoice-number {
+  /* background: #000; */
+  flex-grow: 1;
+  /* margin-right: 15px; */
+  padding-left: 10px;
+  /* padding: 10px; */
+  /* border-radius: 5px; */
+  border-right: 1px solid #888585;
+}
+.invoice-date {
+  /* background: #3c4a45; */
+  flex-grow: 1;
+  /* margin-right: 15px; */
+  padding-left: 10px;
+  /* padding: 10px; */
+  /* border-radius: 5px; */
+}
+.billing-address {
+  background: #d9dbd9;
+  font-size: 14px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.billing-address p {
+  margin: 0;
+}
+.invoice-name p {
+  background: #e6e4e4;
+  font-weight: 700;
+  font-size: 15px;
+  padding-left: 10px;
+  line-height: 2.5;
+}
+.invoice-name {
+  padding: 0px;
+  margin: 0px;
+}
+/* -----------------------------------ici */
+
+/* -----------------------------------ici */
+
+.invoice-summary p {
+  /* text-align: center; */
+  padding: 0px;
+  margin: 0;
+}
+.invoice-summary p:nth-of-type(2n) {
+  /* background: #0d0d0d; */
+  color: #2b2929;
+  font-weight: 500;
+}
+/* -----------------------------------ici */
+
+.business-info strong {
+  font-size: 22px; /* Nom de l'entreprise plus grand */
+  /* color: #e1dbdb; */
+}
+
+.business-info p {
+  font-size: 14px;
+  line-height: 1.5;
+  /* color: #ece6e6; */
+}
+
+.billing-address p:first-child {
+  font-weight: bold;
+  color: #000000; /* Adresse en vert */
+}
+/* * {
+  color: #000;
+} */
+
+/* -----------------  debut  footer     ------------------ */
+.invoice-footer p {
+  margin: 0;
+}
+.invoice-footer {
+  /* background: #b9adad; */
+  display: flex;
+  /* padding-bottom: 10px; */
+  margin-bottom: 10px;
+}
+.invoice-terms {
+  width: 50%;
+  /* padding: 10px; */
+  /* margin: 10px; */
+  /* background: #9d7e7e; */
+  /* text-align: justify; */
+}
+.invoice-terms p {
+  margin: 0px;
+  padding: 5px 30px 0px 30px;
+  font-size: 11px;
+}
+.invoice-totals-section {
+  background: #dad9d9;
+  width: 50%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.invoice-totals-labels {
+  /* background: #b2cdc0; */
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.invoice-totals-values {
+  /* background: #dee376; */
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.invoice-grand-totals {
+  background: #c85a5a;
+  display: flex;
+  justify-content: space-between;
+}
+/* grand total */
+.invoice-grand-totals-terms {
+  background: #ffffff;
+  width: 50%;
+}
+.invoice-grand-totals-data {
+  background: #cbb6a0;
+  width: 50%;
+  display: flex;
+  /* justify-content: center; */
+  text-align: end;
+}
+
+.invoice-grand-totals-data p:first-child {
+  width: 55%;
+  /* background: #bcadad; */
+}
+.invoice-grand-totals-data p:nth-child(2n) {
+  width: 45%;
+  /* background: #7ece78; */
+  text-align: center;
+}
+.invoice-grand-totals p {
+  margin: 0;
+}
+tbody tr:nth-child(2n) {
+  color: rgb(12, 12, 13);
+  background: #dbdada;
+}
+
+.terms {
+  font-weight: 700;
+}
+/* -----------------   fin footer     ------------------ */
+
+/*++++++++++++++++++++++++++++++++++++++++ ici */
+.header {
+  /* width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #bcbaba;
+  color: white;
+  /* padding: 15px; */
+  /* border-radius: 0px 0px 0 0; */
+}
+*/
+/* .header-left {
+  width: 60%;
+  background: #d2cbb0;
+  /* flex-grow: none; */
+/* } */
+/* .header-right {
+  width: 40%;
+  background: #f1b2b2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+   */ */
+
+  /* align-items: ; */
+/* } */
+/* .invoice-info {
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 0%; */
+    /* height: 80%;
+    background: rgb(112, 112, 74);
+} */
+/* .invoice-adresse {
+} */ */
+/* 
+.invoice-adresse .company-info p {
+  /* margin: 5px 0; */
+/* } */ */
+
+.invoice-details,
+.client-details,
+.totals,
+.payment-info,
+.footer {
+  text-align: left;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: right;
+}
+tbody td:nth-child(2) {
+  text-align: left;
+}
+thead th:nth-child(2) {
+  text-align: left;
+}
+
+th {
+  background: #f4f3f3;
+  color: black;
+}
+
+.totals p {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.grand-total {
+  font-weight: bold;
+  font-size: 22px;
+  color: #ffcc00;
+}
+
+.download-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #ff6600;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.download-btn:hover {
+  background: #ae7f18;
+}
+
+/*_----------------------- pour le modal : effet qui aparait pour taper les data ------------------------------------------- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(61, 60, 60, 0.842); */
+  background: rgba(10, 10, 10, 0.86);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  /* background: rgb(222, 230, 230);
+  padding: 20px;
+   */
+
+  /* border-radius: 8px; */
+  /* box-shadow: 0px 0px 10px rgba(188, 15, 15, 0.19); */
+  text-align: center;
+  color: #25465f;
+}
+
+/* *******************bootstrap****************** */
+/* .modal-content input,
+.modal-content textarea {
+  background-color: rgb(248, 248, 248);
+  color: #25465f;
+} */
+.input- {
+  /* background: #976464; */
+  /* width: 18rem; */
+  /* height: 100px; */
+}
+.card {
+  background: #b7b4b4c0;
+  margin-top: 10px;
+  border: 1px solid rgb(102, 100, 100);
+  box-shadow: 0px 0px 10px rgba(79, 75, 75, 0.23);
+}
+
+.card-row {
+  /* margin-top: 0; */
+  padding: 18px 0px 10px 0px;
+  justify-content: center;
+  /* text-align: center; */
+}
+.form-control {
+  border: 1px solid rgba(41, 39, 39, 0.35);
+}
+
+.card-row-facture {
+  padding: 18px 0px 10px 8%;
+  /* justify-content: center; */
+  /* border-radius: 5px; */
+  /* border: 1px solid rgba(41, 39, 39, 0.35); */
+}
+.card-row-company {
+  padding: 18px 0px 10px 8%;
+  /* justify-content: center; */
+  /* border-radius: 5px; */
+  /* border: 1px solid rgba(41, 39, 39, 0.35); */
+}
+.type-document {
+  padding: 10px 0px 0px 8%;
+  margin: 2px;
+  border: 1px solid rgba(41, 39, 39, 0.35);
+  border-radius: 5px;
+}
+.name-entreprise {
+  text-align: center;
+}
+
+/* .col-12 .btn-outline-primary {
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.75rem;
+} */
+
+.card-input-row {
+  width: 600px;
+  background: #ffffffc0;
+  margin-top: 10px;
+  border: 1px solid rgb(41, 39, 39);
+  box-shadow: 0px 0px 10px rgba(79, 75, 75, 0.23);
+  border-radius: 10px;
+  color: #1c4778;
+  /* padding: 0px 0px 0px 0%; */
+  /* padding: 0px 0px 0px 0px; */
+}
+* {
+  bordexr: 1px solid black;
+}
+.card-row-input-button {
+  margin: 10px 0 10px 0;
+}
+.card-input-row h2 {
+  justify-content: center;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.wraper-invoice {
+  background: #2f466a;
+  border: 1px solid rgb(135, 133, 133);
+  border-radius: 2px;
+}
+.ajouter-line {
+  margin-bottom: 20px;
+}
+
+/*-------------------liste des factures saved ----------------------*/
+.invoice-list-saved p{
+  text-align: center;
+  text-decoration: underline;
+}
+.modal-invoice-list-saved {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba(61, 60, 60, 0.842); */
+  background: rgba(10, 10, 10, 0.86);
+
+  display: flex;
+  /* justify-content: ; */
+  align-items: flex-start;
+}
+.invoice-list-saved {
+  background: #da7b7b;
+  background-color: #007bff;
+  width: 35%;
+  /* padding-top: 20%; */
+  margin-top: 30px;
+  margin-left: 40px;
+  border-radius: 3px;
+
+  padding: 10px 10px;
+  font-size: 16px;
+
+  max-height: 600px; /* Ajuste selon ton besoin */
+  overflow-y: auto;
+}
+.invoice-list-saved ul {
+  list-style-type: square;
+  display: flex;
+  flex-direction: column;
+}
+/* .invoice-list-saved ul li {
+  background: #0c73d3;
+  border: 1px solid rgb(164, 169, 177);
+  margin: 3px;
+  border-radius: 1px;
+  padding: 0px 5px;
+  cursor: pointer;
+} */
+
+.invoice-list-saved ul li {
+  background: #0c73d3;
+  border: 1px solid rgb(164, 169, 177);
+  margin: 3px;
+  border-radius: 1px;
+  padding: 0px 5px;
+  cursor: pointer; /* Change le curseur pour montrer que c'est cliquable */
+  transition: background 0.3s ease, transform 0.2s ease; /* Animation fluide */
+}
+
+/* Effet au survol */
+.invoice-list-saved ul li:hover {
+  background: #fab411; /* Change la couleur au survol */
+  transform: scale(1.05); /* Effet de zoom léger */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour effet de profondeur */
+  color: black;
+  border: 1px solid rgb(226, 197, 35);
+}
+
+/* Effet au clic */
+.invoice-list-saved ul li:active {
+  background: #ff541b; /* Couleur plus foncée au clic */
+  transform: scale(0.95); /* Effet d'appui */
+}
+
+
+.card-nom-titre{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.card-nom-titre h3{
+  padding: 0;
+  margin: 0;
+}
+
+.button-voir-ancien-facture button{
+  text-align: center;
+}
+.button-voir-ancien-facture{
+  background: #273f63;
+}
+
+.navbar{
+  background: #043b61;
+}
+.navbar a{
+  color: white;
+}
