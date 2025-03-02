@@ -130,7 +130,7 @@ const Invoice = ({ documentType }) => {
                   <th>Unité</th>
                   <th>Quantité</th>
                   <th>P.U.</th>
-                  <th> Total HT</th>
+                  <th ><span style={{ whiteSpace: 'nowrap' }}>P Total HT</span></th>
                 </tr>
               </thead>
               <tbody>
