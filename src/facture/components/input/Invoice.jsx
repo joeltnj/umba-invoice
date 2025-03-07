@@ -77,7 +77,7 @@ const Invoice = ({ documentType }) => {
             <div className="company-details">
               <div className="business-info">
                 <p>
-                  <strong>UMBA ENTREPRISE </strong>
+                  <strong>UMBA ENTREPRISE commme </strong>
                   <br />
                   1, Allée Anita Conti <br />
                   31520 Ramonville st Agne <br />
@@ -164,7 +164,7 @@ const Invoice = ({ documentType }) => {
               </div>
               <div className="invoice-totals-values">
                 <p>{totalPrix.toFixed(2)} €</p>
-                <p>{montantTva.toFixed(2)}</p>
+                <p>{montantTva.toFixed(2)} €</p>
               </div>
             </div>
           </div>
@@ -172,7 +172,8 @@ const Invoice = ({ documentType }) => {
             <div className="invoice-grand-totals-terms">{/* <p>terme bla blaaa aaaaa</p> */}</div>
             <div className="invoice-grand-totals-data">
               <p>Total TTC</p>
-              <p>{ttc.toFixed(2)} €</p>
+              {/* <p className="p2" style={{ marginLeft: "auto" }}>{ttc.toFixed(2)} €</p> */}
+              <p >{ttc.toFixed(2)} €</p>
             </div>
           </div>
         </div>
