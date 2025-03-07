@@ -77,7 +77,7 @@ const Invoice = ({ documentType }) => {
             <div className="company-details">
               <div className="business-info">
                 <p>
-                  <strong>UMBA ENTREPRISE commme </strong>
+                  <strong>UMBA ENTREPRISE</strong>
                   <br />
                   1, Allée Anita Conti <br />
                   31520 Ramonville st Agne <br />
