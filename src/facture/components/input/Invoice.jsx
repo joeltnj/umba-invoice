@@ -4,7 +4,7 @@ import { useData } from "../context/ContextProvider";
 import ProductRow from "./ProductRow";
 import InputUpdateRow from "./InputUpdateRow";
 
-const Invoice = ({ documentType }) => {
+const Invoice = ({ documentType, isOpenDocumentType }) => {
   const { formData, productData, setProductData } = useData(); //ici *****************************
 
   const date = new Date();
@@ -37,6 +37,8 @@ const Invoice = ({ documentType }) => {
 
   const montantTva = totalPrix * (Number(formData.tva) / 100);
   let ttc = totalPrix + montantTva;
+  let acompte = 100;
+  let solde = ttc - acompte;
 
   const handleRowClick = (row) => {
     setSelectedRow(row);
@@ -130,7 +132,9 @@ const Invoice = ({ documentType }) => {
                   <th>Unité</th>
                   <th>Quantité</th>
                   <th>P.U.</th>
-                  <th ><span style={{ whiteSpace: 'nowrap' }}>P Total HT</span></th>
+                  <th>
+                    <span style={{ whiteSpace: "nowrap" }}>P Total HT</span>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -173,9 +177,22 @@ const Invoice = ({ documentType }) => {
             <div className="invoice-grand-totals-data">
               <p>Total TTC</p>
               {/* <p className="p2" style={{ marginLeft: "auto" }}>{ttc.toFixed(2)} €</p> */}
-              <p >{ttc.toFixed(2)} €</p>
+              <p>{ttc.toFixed(2)} €</p>
             </div>
           </div>
+          {/* bloc acoumpte */}
+          {isOpenDocumentType && (
+            <div className="invoice-bloc-accompte">
+              <div className="invoice-acompte">
+                <p>Acompte</p>
+                <p>{acompte.toFixed(2)} €</p>
+              </div>
+              <div className="invoice-solde">
+                <p>Solde</p>
+                <p>{solde.toFixed(2)} €</p>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Bouton pour générer le PDF */}

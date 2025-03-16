@@ -16,9 +16,21 @@ const InvoicePage = () => {
   const [shouldSend, setShouldSend] = useState(false); // Indique quand envoyer la requête
   const [invoices, setInvoices] = useState([]);
 
+  const [isOpenDocumentType, setIsOpenDocumentType] = useState(false);
+
   // ************** debut pour InputData **************
+  // const handleChangeInfos = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+    
+  // };
   const handleChangeInfos = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  
+    // Activer l'affichage si le type de document est "facture"
+    if (name === "documentType") {
+      setIsOpenDocumentType(value === "facture");
+    }
   };
 
   const handleSubmitInfos = (e) => {
@@ -191,7 +203,7 @@ const InvoicePage = () => {
             </div>
             <div className="col-7 bg-primar text-white wraper-invoice">
               {/* facture Invoice */}
-              <Invoice />
+              <Invoice isOpenDocumentType={isOpenDocumentType}/>
               {/* buton save data sended */}
 
               <InputSaveData

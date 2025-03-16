@@ -70,6 +70,22 @@ const InputData = ({ formData, handleChange, handleSubmit }) => {
               </div>
               <div className="col-md-5">
                 <label>
+                  {/* <input type="text" name="tva" value={formData.tva} onChange={handleChange} /> */}
+                  <input
+                    type="number"
+                    name="acompte"
+                    placeholder="Acompte"
+                    value={formData.tva}
+                    onChange={handleChange}
+                    min="0"
+                    onKeyDown={(e) => {
+                      if (e.key === "-" || e.key === "e") e.preventDefault();
+                    }}
+                  />
+                </label>
+              </div>
+              <div className="col-md-5">
+                <label>
                   <input
                     type="text"
                     name="nomCompany"
