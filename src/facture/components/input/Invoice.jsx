@@ -37,7 +37,7 @@ const Invoice = ({ documentType, isOpenDocumentType }) => {
 
   const montantTva = totalPrix * (Number(formData.tva) / 100);
   let ttc = totalPrix + montantTva;
-  let acompte = 100;
+  let acompte = Number(formData.acompte);
   let solde = ttc - acompte;
 
   const handleRowClick = (row) => {
