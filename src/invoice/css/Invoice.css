@@ -590,6 +590,3 @@ tbody tr:nth-child(2n) td{
 .invoice-acompte p, .invoice-solde p{
   margin: 0;
 }
-.invoice-bloc-accompte{
-  displasy: none;
-}

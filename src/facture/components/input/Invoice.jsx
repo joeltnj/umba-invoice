@@ -107,9 +107,17 @@ const Invoice = ({ documentType, isOpenDocumentType }) => {
                 </div>
                 <div className="invoice-date">
                   <p>Date de {documentType}</p>
-                  <p>{`${String(date.getDate()).padStart(2, "0")}/${String(
-                    date.getMonth() + 1
-                  ).padStart(2, "0")}/${date.getFullYear()}`}</p>
+                  <p>
+                    {/* {`${String(date.getDate()).padStart(2, "0")}/${String(
+                      date.getMonth() + 1
+                    ).padStart(2, "0")}/${date.getFullYear()}`} */}
+
+                    <p>
+                      {formData.dateDocument
+                        ? formData.dateDocument.split("-").reverse().join("/")
+                        : "Date non définie"}
+                    </p>
+                  </p>
                 </div>
               </div>
               <div className="billing-address">

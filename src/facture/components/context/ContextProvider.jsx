@@ -16,11 +16,21 @@ const ContextProvider = ({ children }) => {
     chantierCommune: "",
     chantierBP: "",
     documentType: "devis",
-    acompte:""
+    acompte: "",
+    dateDocument: "",
   });
 
   const [productData, setProductData] = useState([
-    { refNumber: 1, description: "", prixUnitaire: "", quantite: "", unite: "", prixTotal: "", acompte:"" },
+    {
+      refNumber: 1,
+      description: "",
+      prixUnitaire: "",
+      quantite: "",
+      unite: "",
+      prixTotal: "",
+      acompte: "",
+      dateDocument: "",
+    },
   ]);
   const [dataSend, setDataSend] = useState({
     titre: "",

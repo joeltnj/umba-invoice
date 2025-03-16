@@ -36,6 +36,20 @@ const InputData = ({ formData, handleChange, handleSubmit }) => {
                   </label>
                 </div>
               </div>
+              <div className="col-md-5 form-group">
+                <label htmlFor="dateDocument" className="form-label">
+                  Date du document
+                </label>
+                <input
+                  type="date"
+                  name="dateDocument"
+                  id="dateDocument"
+                  className="form-control"
+                  value={formData.dateDocument || ""}
+                  onChange={handleChange}
+                  onFocus={(e) => e.target.showPicker()} // Affiche le calendrier dès le clic
+                />
+              </div>
             </div>
           </div>
 
