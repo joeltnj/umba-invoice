@@ -75,7 +75,7 @@ const InputData = ({ formData, handleChange, handleSubmit }) => {
                     type="number"
                     name="acompte"
                     placeholder="Acompte"
-                    value={formData.tva}
+                    value={formData.acompte}
                     onChange={handleChange}
                     min="0"
                     onKeyDown={(e) => {
