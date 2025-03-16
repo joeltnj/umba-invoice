@@ -106,7 +106,7 @@ const Invoice = ({ documentType, isOpenDocumentType }) => {
                   <p>{formData.numFacture}</p>
                 </div>
                 <div className="invoice-date">
-                  <p>Date de {documentType}</p>
+                  <p>Date  {formData.documentType}</p>
                   <p>
                     {/* {`${String(date.getDate()).padStart(2, "0")}/${String(
                       date.getMonth() + 1

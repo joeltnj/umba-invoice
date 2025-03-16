@@ -36,9 +36,9 @@ const InputData = ({ formData, handleChange, handleSubmit }) => {
                   </label>
                 </div>
               </div>
-              <div className="col-md-5 form-group">
+              <div className="col-md-3 form-group bloc-date">
                 <label htmlFor="dateDocument" className="form-label">
-                  Date du document
+                  Date de {formData.documentType}
                 </label>
                 <input
                   type="date"

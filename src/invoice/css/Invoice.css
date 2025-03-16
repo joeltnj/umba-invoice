@@ -569,7 +569,7 @@ tbody tr:nth-child(2n) td{
 }
 
 
-/* pour les acouptes */
+/* pour les acoumptes */
 
 .invoice-bloc-accompte{
   margin-top: 10px;
@@ -589,4 +589,11 @@ tbody tr:nth-child(2n) td{
 }
 .invoice-acompte p, .invoice-solde p{
   margin: 0;
+}
+
+/* pour la bloc date */
+.form-control{
+  padding: 2px;
+  width: 80%;
+  border-radius:3px
 }
